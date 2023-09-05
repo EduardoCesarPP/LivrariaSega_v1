@@ -65,13 +65,13 @@ int main(){
 	while(voltaMenu == 2){
 		system("cls");
 		printf("==============================================================================================================\n");
-		printf("| Bem vindo™ ‡ Livraria Sega.                                                                                |\n");
+		printf("| Bem vindo¬™ √† Livraria Sega.                                                                                |\n");
 		printf("|============================================================================================================|\n");
-		printf("| Selecione uma das opÁıes abaixo:                                                                           |\n");
+		printf("| Selecione uma das op√ß√µes abaixo:                                                                           |\n");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		printf("| 1 - Livros                                                                                                 |\n");
 		printf("| 2 - Clientes                                                                                               |\n");
-		printf("| 3 - Funcion·rios                                                                                           |\n");
+		printf("| 3 - Funcion√°rios                                                                                           |\n");
 		printf("| 4 - Editoras                                                                                               |\n");
 		printf("| 5 - Vendas                                                                                                 |\n");
 		printf("| 6 - Contas                                                                                                 |\n");
@@ -79,7 +79,7 @@ int main(){
 		printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 		scanf("%d", &opcaoMenu);
 		while(opcaoMenu < 1 || opcaoMenu > 8 ){
-			printf("\n  Digite uma opÁ„o v·lida. (Valores de 1 a 8).\n  ");
+			printf("\n  Digite uma op√ß√£o v√°lida. (Valores de 1 a 8).\n  ");
 			scanf("%d", &opcaoMenu);
 		}
 		switch(opcaoMenu){
@@ -121,20 +121,20 @@ void Funcionarios(){
 		system("cls");
 		int opcaoFuncionario;		
 		printf("==============================================================================================================\n");
-		printf("| Funcion·rios                                                                                               |\n");
+		printf("| Funcion√°rios                                                                                               |\n");
 		printf("|============================================================================================================|\n");
 		FuncionariosLista();
-		printf("| Escolha uma opÁ„o:                                                                                         |\n");
+		printf("| Escolha uma op√ß√£o:                                                                                         |\n");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		printf("| 1 - Cadastrar                                                                                              |\n");
 		printf("| 2 - Consultar                                                                                              |\n");
 		printf("| 3 - Alterar                                                                                                |\n");
-		printf("| 4 - Gerar RelatÛrio                                                                                        |\n");
+		printf("| 4 - Gerar Relat√≥rio                                                                                        |\n");
 		printf("| 5 - Voltar                                                                                                 |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n  ");
 		scanf("%d", &opcaoFuncionario);
 		while(opcaoFuncionario < 1 || opcaoFuncionario > 5){
-			printf("\n  Digite uma opÁ„o v·lida. (Valores de 1 a 5).\n  ");
+			printf("\n  Digite uma op√ß√£o v√°lida. (Valores de 1 a 5).\n  ");
 			scanf("%d", &opcaoFuncionario);
 		}
 		switch(opcaoFuncionario){
@@ -183,29 +183,29 @@ void FuncionariosCadastro(){
 	
 	
 	printf("==============================================================================================================\n");
-	printf("| Cadastro de Funcion·rios.                                                                                  |\n");
+	printf("| Cadastro de Funcion√°rios.                                                                                  |\n");
 	printf("|============================================================================================================|\n");
-	printf("| Digite o nome do™ funcion·rio™:                                                                            |\n");
+	printf("| Digite o nome do¬™ funcion√°rio¬™:                                                                            |\n");
 	printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 	fflush(stdin);
 	fgets(funcionarioVar.nome,41,stdin);
 	printf("|------------------------------------------------------------------------------------------------------------|\n");
-	printf("| Digite o RG do™ funcion·rio™:                                                                              |\n");
+	printf("| Digite o RG do¬™ funcion√°rio¬™:                                                                              |\n");
 	printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 	gets(funcionarioVar.rg);
 	printf("|------------------------------------------------------------------------------------------------------------|\n");
-	printf("| Digite o CPF do™ funcion·rio™:                                                                             |\n");
+	printf("| Digite o CPF do¬™ funcion√°rio¬™:                                                                             |\n");
 	printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 	gets(funcionarioVar.cpf);
 	/*while(!ValidarCPF(cpf)){
-		printf("\nCPF INV¡LIDO!\n");
-		printf("Digite o CPF do™ funcion·rio™:\n");
+		printf("\nCPF INV√ÅLIDO!\n");
+		printf("Digite o CPF do¬™ funcion√°rio¬™:\n");
 		gets(funcionarioVar.cpf);
 	}*/
 	retornarData(funcionarioVar.contratacao);
 	
 	printf("|------------------------------------------------------------------------------------------------------------|\n");
-	printf("| Digite a funÁ„o do™ funcion·rio™:                                                                          |\n");
+	printf("| Digite a fun√ß√£o do¬™ funcion√°rio¬™:                                                                          |\n");
 	printf("|------------------------------------------------------------------------------------------------------------|\n");
 	printf("| 1 - Gerente                                                                                                |\n");
 	printf("| 2 - Vendedor                                                                                               |\n");
@@ -213,24 +213,24 @@ void FuncionariosCadastro(){
 	scanf("%d", &funcionarioVar.funcao);
 	fflush(stdin);
 	printf("|------------------------------------------------------------------------------------------------------------|\n");
-	printf("| Digite o telefone do™ funcion·rio™:                                                                        |\n");
+	printf("| Digite o telefone do¬™ funcion√°rio¬™:                                                                        |\n");
 	printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 	gets(funcionarioVar.telefone);
 	printf("|------------------------------------------------------------------------------------------------------------|\n");
-	printf("| Digite o email do™ funcion·rio™:                                                                           |\n");
+	printf("| Digite o email do¬™ funcion√°rio¬™:                                                                           |\n");
 	printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 	gets(funcionarioVar.email);
 
 	while(!ValidarEmail(funcionarioVar.email)){
-		printf("| EMAIL INV¡LIDO!                                                                                            |\n");
-		printf("| Digite o email do™ funcion·rio™:                                                                           |\n");
+		printf("| EMAIL INV√ÅLIDO!                                                                                            |\n");
+		printf("| Digite o email do¬™ funcion√°rio¬™:                                                                           |\n");
 		printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 		gets(funcionarioVar.email);
 		printf("--------------------------------------------------------------------------------------------------------------\n");
 	}
 	
-	int codigo = NumeroLinhas("Funcion·rios.txt") / 9 + 1;
-	FILE *f = fopen("Funcion·rios.txt", "a");
+	int codigo = NumeroLinhas("Funcion√°rios.txt") / 9 + 1;
+	FILE *f = fopen("Funcion√°rios.txt", "a");
 	fprintf(f, "%d\n", codigo);	    
 	if(strlen(funcionarioVar.nome) == 40){
 		fprintf(f, "%s\n", funcionarioVar.nome);
@@ -250,7 +250,7 @@ void FuncionariosCadastro(){
 	fprintf(f, "%s\n", funcionarioVar.email);   
 	fprintf(f, "-----------------------------------------------------------------\n");
 	fclose(f);
-	printf("  Funcion·rio™ %s registrado™ com sucesso. Pressione qualquer tecla para continuar.", funcionarioVar.nome);
+	printf("  Funcion√°rio¬™ %s registrado¬™ com sucesso. Pressione qualquer tecla para continuar.", funcionarioVar.nome);
 	getch();
 	system("cls");
 }
@@ -261,32 +261,32 @@ void FuncionariosConsulta(){
 		
 		
 		printf("==============================================================================================================\n");
-		printf("| Consulta de Funcion·rios.                                                                                  |\n");
+		printf("| Consulta de Funcion√°rios.                                                                                  |\n");
 		printf("|============================================================================================================|\n");
-		printf("| Digite o cÛdigo do™ funcion·rio™ que deseja consultar:                                                     |\n");
+		printf("| Digite o c√≥digo do¬™ funcion√°rio¬™ que deseja consultar:                                                     |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n");
 
 		int codigo = 0;
 		scanf("%d", &codigo);
 		
-		while(codigo < 1 || codigo > NumeroLinhas("Funcion·rios.txt") / 9){
+		while(codigo < 1 || codigo > NumeroLinhas("Funcion√°rios.txt") / 9){
 			printf("----------------------------------------------------------------------------------------------------------\n");
-			printf("| N„o existe um funcion·rio registrado com o cÛdigo %-6d |\n", codigo);
-			printf("| Digite o cÛdigo do™ funcion·rio™ que deseja consultar:   |\n");
+			printf("| N√£o existe um funcion√°rio registrado com o c√≥digo %-6d |\n", codigo);
+			printf("| Digite o c√≥digo do¬™ funcion√°rio¬™ que deseja consultar:   |\n");
 			printf("----------------------------------------------------------------------------------------------------------\n  ");
 			scanf("%d", &codigo);
 		}
 	
-		FILE *f = fopen("Funcion·rios.txt", "r");
+		FILE *f = fopen("Funcion√°rios.txt", "r");
 		char line[100];
 		int i = 0;
 		system("cls");
 		printf("==============================================================================================================\n");
-		printf("| Dados do Funcion·rio                                                                                       |\n");
+		printf("| Dados do Funcion√°rio                                                                                       |\n");
 		printf("|============================================================================================================|\n");
 		while(fgets(line, sizeof(line), f)){
 			if(i == (9*(codigo-1))){
-				printf("| CÛdigo:   %-40s                                                         |\n", strtok(line,"\n"));
+				printf("| C√≥digo:   %-40s                                                         |\n", strtok(line,"\n"));
 			}
 			if(i == (9*(codigo-1))+1){
 				printf("| Nome:     %-40s                                                         |\n", strtok(line,"\n"));
@@ -301,7 +301,7 @@ void FuncionariosConsulta(){
 			}
 			
 			if(i == (9*(codigo-1))+5){
-				printf("| FunÁ„o:   %-40s                                                         |\n", strtok(line,"\n"));
+				printf("| Fun√ß√£o:   %-40s                                                         |\n", strtok(line,"\n"));
 			}
 			
 			if(i == (9*(codigo-1))+6){
@@ -317,7 +317,7 @@ void FuncionariosConsulta(){
 		fclose(f);
 		printf("| Deseja efetuar uma nova consulta?                                                                          |\n");
 		printf("| 1 - Sim                                                                                                    |\n");
-		printf("| 2 - N„o                                                                                                    |\n");
+		printf("| 2 - N√£o                                                                                                    |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n");
 		scanf("%d", &continua);
 		continua--;
@@ -331,9 +331,9 @@ void FuncionariosAlteracao(){
 		
 		
 		printf("==============================================================================================================\n");
-		printf("| AlteraÁ„o de Funcion·rios.                                                                                 |\n");
+		printf("| Altera√ß√£o de Funcion√°rios.                                                                                 |\n");
 		printf("|============================================================================================================|\n");
-		printf("| Digite o cÛdigo do™ funcion·rio™ que deseja alterar:                                                       |\n");
+		printf("| Digite o c√≥digo do¬™ funcion√°rio¬™ que deseja alterar:                                                       |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n");
 		
 		
@@ -341,24 +341,24 @@ void FuncionariosAlteracao(){
 		int codigo = 0;
 		scanf("%d", &codigo);
 		
-		while(codigo < 1 || codigo > NumeroLinhas("Funcion·rios.txt") / 9){
+		while(codigo < 1 || codigo > NumeroLinhas("Funcion√°rios.txt") / 9){
 			printf("--------------------------------------------------------------------------------------------------------------\n");
-			printf("| N„o existe um funcion·rio registrado com o cÛdigo %-6d                                                   |\n", codigo);
-			printf("| Digite o cÛdigo do™ funcion·rio™ que deseja alterar:                                                       |\n");
+			printf("| N√£o existe um funcion√°rio registrado com o c√≥digo %-6d                                                   |\n", codigo);
+			printf("| Digite o c√≥digo do¬™ funcion√°rio¬™ que deseja alterar:                                                       |\n");
 			printf("--------------------------------------------------------------------------------------------------------------\n");
 			scanf("%d", &codigo);
 		}
 	
-		FILE *f = fopen("Funcion·rios.txt", "r");
+		FILE *f = fopen("Funcion√°rios.txt", "r");
 		char line[100];
 		int i = 0;
 		system("cls");
 		printf("==============================================================================================================\n");
-		printf("| Dados do Funcion·rio                                                                                       |\n");
+		printf("| Dados do Funcion√°rio                                                                                       |\n");
 		printf("|============================================================================================================|\n");
 		while(fgets(line, sizeof(line), f)){
 			if(i == (9*(codigo-1))){
-				printf("| CÛdigo:   %-40s |\n", strtok(line,"\n"));
+				printf("| C√≥digo:   %-40s |\n", strtok(line,"\n"));
 			}
 			if(i == (9*(codigo-1))+1){
 				printf("| Nome:     %-40s |\n", strtok(line,"\n"));
@@ -373,7 +373,7 @@ void FuncionariosAlteracao(){
 			}
 			
 			if(i == (9*(codigo-1))+5){
-				printf("| FunÁ„o:   %-40s |\n", strtok(line,"\n"));
+				printf("| Fun√ß√£o:   %-40s |\n", strtok(line,"\n"));
 			}
 			
 			if(i == (9*(codigo-1))+6){
@@ -393,15 +393,15 @@ void FuncionariosAlteracao(){
 		printf("| 1 - Nome                                                                                                   |\n");
 		printf("| 2 - RG                                                                                                     |\n");
 		printf("| 3 - CPF                                                                                                    |\n");
-		printf("| 4 - FunÁ„o                                                                                                 |\n");
+		printf("| 4 - Fun√ß√£o                                                                                                 |\n");
 		printf("| 5 - Telefone                                                                                               |\n");
 		printf("| 6 - Email                                                                                                  |\n");
 		printf("==============================================================================================================\n  ");
 		scanf("%d", &opcaoalteracao);
 		char novodado[100];
 		char novonome[42];
-		FILE *from = fopen("Funcion·rios.txt", "r");
-		FILE *to = fopen("Funcion·rios2.txt", "w");
+		FILE *from = fopen("Funcion√°rios.txt", "r");
+		FILE *to = fopen("Funcion√°rios2.txt", "w");
 		i = 0;
 		fflush(stdin);
 		switch(opcaoalteracao){
@@ -425,8 +425,8 @@ void FuncionariosAlteracao(){
 				}
 				fclose(from);
 				fclose(to);
-				remove("Funcion·rios.txt");
-				rename("Funcion·rios2.txt", "Funcion·rios.txt");
+				remove("Funcion√°rios.txt");
+				rename("Funcion√°rios2.txt", "Funcion√°rios.txt");
 				break;
 			case 2:
 				printf("==============================================================================================================\n");
@@ -444,8 +444,8 @@ void FuncionariosAlteracao(){
 				}
 				fclose(from);
 				fclose(to);
-				remove("Funcion·rios.txt");
-				rename("Funcion·rios2.txt", "Funcion·rios.txt");
+				remove("Funcion√°rios.txt");
+				rename("Funcion√°rios2.txt", "Funcion√°rios.txt");
 				break;
 			case 3:
 				printf("==============================================================================================================\n");
@@ -462,12 +462,12 @@ void FuncionariosAlteracao(){
 				}
 				fclose(from);
 				fclose(to);
-				remove("Funcion·rios.txt");
-				rename("Funcion·rios2.txt", "Funcion·rios.txt");
+				remove("Funcion√°rios.txt");
+				rename("Funcion√°rios2.txt", "Funcion√°rios.txt");
 				break;
 			case 4:
 				printf("==============================================================================================================\n");
-				printf("| Digite a nova FunÁ„o:                                                                                      |\n");
+				printf("| Digite a nova Fun√ß√£o:                                                                                      |\n");
 				printf("--------------------------------------------------------------------------------------------------------------\n  ");
 				gets(novodado);
 				
@@ -481,8 +481,8 @@ void FuncionariosAlteracao(){
 				}
 				fclose(from);
 				fclose(to);
-				remove("Funcion·rios.txt");
-				rename("Funcion·rios2.txt", "Funcion·rios.txt");
+				remove("Funcion√°rios.txt");
+				rename("Funcion√°rios2.txt", "Funcion√°rios.txt");
 				break;
 			case 5:
 				printf("==============================================================================================================\n");
@@ -500,8 +500,8 @@ void FuncionariosAlteracao(){
 				}
 				fclose(from);
 				fclose(to);
-				remove("Funcion·rios.txt");
-				rename("Funcion·rios2.txt", "Funcion·rios.txt");
+				remove("Funcion√°rios.txt");
+				rename("Funcion√°rios2.txt", "Funcion√°rios.txt");
 				break;
 			case 6:
 				printf("==============================================================================================================\n");
@@ -509,7 +509,7 @@ void FuncionariosAlteracao(){
 				printf("--------------------------------------------------------------------------------------------------------------\n  ");
 				gets(novodado);
 				while(!ValidarEmail(novodado)){                                                        
-					printf("| EMAIL INV¡LIDO!                                                                                            |\n");
+					printf("| EMAIL INV√ÅLIDO!                                                                                            |\n");
 					printf("| Digite o novo E-mail:                                                                                      |\n");
 					printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 					gets(novodado);
@@ -525,16 +525,16 @@ void FuncionariosAlteracao(){
 				}
 				fclose(from);
 				fclose(to);
-				remove("Funcion·rios.txt");
-				rename("Funcion·rios2.txt", "Funcion·rios.txt");
+				remove("Funcion√°rios.txt");
+				rename("Funcion√°rios2.txt", "Funcion√°rios.txt");
 				break;
 		}
 		
 		printf("--------------------------------------------------------------------------------------------------------------\n");
-		printf("| Deseja efetuar uma nova alteraÁ„o?                                                                         |\n");
+		printf("| Deseja efetuar uma nova altera√ß√£o?                                                                         |\n");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		printf("| 1 - Sim                                                                                                    |\n");
-		printf("| 2 - N„o                                                                                                    |\n");
+		printf("| 2 - N√£o                                                                                                    |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n  ");
 		fflush(stdin);
 		scanf("%d", &continua);
@@ -552,15 +552,15 @@ void FuncionariosLista(){
 		char funcao[16];
 	};
 	
-	printf("| Lista de Funcion·rios                                                                                      |\n");
+	printf("| Lista de Funcion√°rios                                                                                      |\n");
 	printf("|============================================================================================================|\n");
 	struct Funcionario funcionarioVar;
-	if(NumeroLinhas("Funcion·rios.txt") == 0){
-		printf("N„o h· funcion·rios registrados.");
+	if(NumeroLinhas("Funcion√°rios.txt") == 0){
+		printf("N√£o h√° funcion√°rios registrados.\n");
 	}else{
-		printf("| %6s     %-40s   %-12s   %-14s   %-20s |\n", "C”DIGO", "NOME", "RG", "CPF", "FUN«√O");
+		printf("| %6s     %-40s   %-12s   %-14s   %-20s |\n", "C√ìDIGO", "NOME", "RG", "CPF", "FUN√á√ÉO");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
-		FILE *f = fopen("Funcion·rios.txt", "r");
+		FILE *f = fopen("Funcion√°rios.txt", "r");
 		char line[100];
 		int i = 0;
 		while(fgets(line, sizeof(line), f)){
@@ -601,18 +601,18 @@ void FuncionariosRelatorio(){
 		char cpf[15];
 		char funcao[16];
 	};
-	remove("Funcion·riosRel.txt");
-	FILE *rel = fopen("Funcion·riosRel.txt", "w");
+	remove("Funcion√°riosRel.txt");
+	FILE *rel = fopen("Funcion√°riosRel.txt", "w");
 	fprintf(rel, "===============================================================================================================\n");
-	fprintf(rel, "|                                            Lista de Funcion·rios                                            |\n");
+	fprintf(rel, "|                                            Lista de Funcion√°rios                                            |\n");
 	fprintf(rel, "|=============================================================================================================|\n");
 	struct Funcionario funcionarioVar;
-	if(NumeroLinhas("Funcion·rios.txt") == 0){
-		printf("N„o h· funcion·rios registrados.");
+	if(NumeroLinhas("Funcion√°rios.txt") == 0){
+		printf("N√£o h√° funcion√°rios registrados.\n");
 	}else{
-		fprintf(rel, "| %6s     %-40s   %-12s   %-14s   %-20s  |\n", "C”DIGO", "NOME", "RG", "CPF", "FUN«√O");
+		fprintf(rel, "| %6s     %-40s   %-12s   %-14s   %-20s  |\n", "C√ìDIGO", "NOME", "RG", "CPF", "FUN√á√ÉO");
 		fprintf(rel, "|-------------------------------------------------------------------------------------------------------------|\n");
-		FILE *f = fopen("Funcion·rios.txt", "r");
+		FILE *f = fopen("Funcion√°rios.txt", "r");
 		char line[100];
 		int i = 0;
 		while(fgets(line, sizeof(line), f)){
@@ -644,7 +644,7 @@ void FuncionariosRelatorio(){
 		fclose(rel);
 		
 		printf("==============================================================================================================\n");
-		printf("| RelatÛrio gerado com sucesso. Digite qualquer tecla para continuar                                         |\n");
+		printf("| Relat√≥rio gerado com sucesso. Digite qualquer tecla para continuar                                         |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n");
 		getch();
 	}
@@ -661,18 +661,18 @@ void Clientes(){
 		printf("| Clientes                                                                                                   |\n");
 		printf("|============================================================================================================|\n");
 		ClientesLista();
-		printf("| Escolha uma opÁ„o:                                                                                         |\n");
+		printf("| Escolha uma op√ß√£o:                                                                                         |\n");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		printf("| 1 - Cadastrar                                                                                              |\n");
 		printf("| 2 - Consultar                                                                                              |\n");
 		printf("| 3 - Alterar                                                                                                |\n");
-		printf("| 4 - Gerar RelatÛrio                                                                                        |\n");
+		printf("| 4 - Gerar Relat√≥rio                                                                                        |\n");
 		printf("| 5 - Voltar                                                                                                 |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n  ");
 
 		scanf("%d", &opcaoCliente);
 		while(opcaoCliente < 1 || opcaoCliente > 5){
-			printf("\nDigite uma opÁ„o v·lida. (Valores de 1 a 5)\n");
+			printf("\nDigite uma op√ß√£o v√°lida. (Valores de 1 a 5)\n");
 			scanf("%d", &opcaoCliente);
 		}
 		switch(opcaoCliente){
@@ -720,38 +720,38 @@ void ClientesCadastro(){
 	printf("==============================================================================================================\n");
 	printf("| Cadastro de Clientes.                                                                                      |\n");
 	printf("|============================================================================================================|\n");
-	printf("| Digite o nome do™ Cliente:                                                                                 |\n");
+	printf("| Digite o nome do¬™ Cliente:                                                                                 |\n");
 	printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 	fflush(stdin);
 	gets(ClienteVar.nome);
 	printf("|------------------------------------------------------------------------------------------------------------|\n");
-	printf("| Digite o RG do™ Cliente:                                                                                   |\n");
+	printf("| Digite o RG do¬™ Cliente:                                                                                   |\n");
 	printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 	gets(ClienteVar.rg);
 	printf("|------------------------------------------------------------------------------------------------------------|\n");
-	printf("| Digite o CPF do™ Cliente:                                                                                  |\n");
+	printf("| Digite o CPF do¬™ Cliente:                                                                                  |\n");
 	printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 	gets(ClienteVar.cpf);
 	/*while(!ValidarCPF(cpf)){
-		printf("\nCPF INV¡LIDO!\n");
-		printf("Digite o CPF do™ Cliente:\n");
+		printf("\nCPF INV√ÅLIDO!\n");
+		printf("Digite o CPF do¬™ Cliente:\n");
 		gets(ClienteVar.cpf);
 	}*/
 	retornarData(ClienteVar.contratacao);
 	
 	printf("|------------------------------------------------------------------------------------------------------------|\n");
-	printf("| Digite o telefone do™ Cliente:                                                                             |\n");
+	printf("| Digite o telefone do¬™ Cliente:                                                                             |\n");
 	printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 	gets(ClienteVar.telefone);
 	printf("|------------------------------------------------------------------------------------------------------------|\n");
-	printf("| Digite o email do™ Cliente:                                                                                |\n");
+	printf("| Digite o email do¬™ Cliente:                                                                                |\n");
 	printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 	gets(ClienteVar.email);
 	printf("--------------------------------------------------------------------------------------------------------------\n");
 
 	while(!ValidarEmail(ClienteVar.email)){
-		printf("| EMAIL INV¡LIDO!                                                                                            |\n");
-		printf("| Digite o email do™ Cliente:                                                                                |\n");
+		printf("| EMAIL INV√ÅLIDO!                                                                                            |\n");
+		printf("| Digite o email do¬™ Cliente:                                                                                |\n");
 		printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 		gets(ClienteVar.email);
 		printf("--------------------------------------------------------------------------------------------------------------\n");
@@ -777,14 +777,14 @@ void ClientesConsulta(){
 		printf("==============================================================================================================\n");
 		printf("| Consulta de Clientes.                                                                                      |\n");
 		printf("|============================================================================================================|\n");
-		printf("| Digite o cÛdigo do™ Cliente que deseja consultar:                                                          |\n");
+		printf("| Digite o c√≥digo do¬™ Cliente que deseja consultar:                                                          |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n  ");
 		int codigo = 0;
 		scanf("%d", &codigo);	
 		while(codigo < 1 || codigo > NumeroLinhas("Clientes.txt") / 8){
 			printf("--------------------------------------------------------------------------------------------------------------\n");
-			printf("| N„o existe um Cliente registrado com o cÛdigo %-6d                                                       |\n", codigo);
-			printf("| Digite o cÛdigo do™ Cliente que deseja consultar:                                                          |\n");
+			printf("| N√£o existe um Cliente registrado com o c√≥digo %-6d                                                       |\n", codigo);
+			printf("| Digite o c√≥digo do¬™ Cliente que deseja consultar:                                                          |\n");
 			printf("--------------------------------------------------------------------------------------------------------------\n  ");
 			scanf("%d", &codigo);
 		}	
@@ -793,11 +793,11 @@ void ClientesConsulta(){
 		int i = 0;
 		system("cls");
 		printf("==============================================================================================================\n");
-		printf("| Dados do™ Cliente                                                                                          |\n");
+		printf("| Dados do¬™ Cliente                                                                                          |\n");
 		printf("|============================================================================================================|\n");
 		while(fgets(line, sizeof(line), f)){
 			if(i == (8*(codigo-1))){
-				printf("| CÛdigo:   %-40s                                                         |\n", strtok(line,"\n"));
+				printf("| C√≥digo:   %-40s                                                         |\n", strtok(line,"\n"));
 			}
 			if(i == (8*(codigo-1))+1){
 				printf("| Nome:     %-40s                                                         |\n", strtok(line,"\n"));
@@ -824,7 +824,7 @@ void ClientesConsulta(){
 		fclose(f);
 		printf("| Deseja efetuar uma nova consulta?                                                                          |\n");
 		printf("| 1 - Sim                                                                                                    |\n");
-		printf("| 2 - N„o                                                                                                    |\n");
+		printf("| 2 - N√£o                                                                                                    |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n  ");
 		scanf("%d", &continua);
 		continua--;
@@ -837,9 +837,9 @@ void ClientesAlteracao(){
 	while(continua == 0){
 		
 		printf("==============================================================================================================\n");
-		printf("| AlteraÁ„o de Clientes.                                                                                     |\n");
+		printf("| Altera√ß√£o de Clientes.                                                                                     |\n");
 		printf("|============================================================================================================|\n");
-		printf("| Digite o cÛdigo do™ Cliente que deseja alterar:                                                            |\n");
+		printf("| Digite o c√≥digo do¬™ Cliente que deseja alterar:                                                            |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n  ");
 		
 		
@@ -849,8 +849,8 @@ void ClientesAlteracao(){
 		
 		while(codigo < 1 || codigo > NumeroLinhas("Clientes.txt") / 8){
 			printf("--------------------------------------------------------------------------------------------------------------\n");
-			printf("| N„o existe um Cliente registrado com o cÛdigo %-6d                                                       |\n", codigo);
-			printf("| Digite o cÛdigo do™ Cliente que deseja alterar:                                                            |\n");
+			printf("| N√£o existe um Cliente registrado com o c√≥digo %-6d                                                       |\n", codigo);
+			printf("| Digite o c√≥digo do¬™ Cliente que deseja alterar:                                                            |\n");
 			printf("--------------------------------------------------------------------------------------------------------------\n  ");		
 			scanf("%d", &codigo);
 		}
@@ -860,11 +860,11 @@ void ClientesAlteracao(){
 		int i = 0;
 		system("cls");
 		printf("==============================================================================================================\n");
-		printf("| Dados do™ Cliente                                                                                          |\n");
+		printf("| Dados do¬™ Cliente                                                                                          |\n");
 		printf("|============================================================================================================|\n");
 		while(fgets(line, sizeof(line), f)){
 			if(i == (8*(codigo-1))){
-				printf("| CÛdigo:   %-40s                                                         |\n", strtok(line,"\n"));
+				printf("| C√≥digo:   %-40s                                                         |\n", strtok(line,"\n"));
 			}
 			if(i == (8*(codigo-1))+1){
 				printf("| Nome:     %-40s                                                         |\n", strtok(line,"\n"));
@@ -992,7 +992,7 @@ void ClientesAlteracao(){
 				printf("--------------------------------------------------------------------------------------------------------------\n  ");
 				gets(novodado);
 				while(!ValidarEmail(novodado)){
-					printf("| EMAIL INV¡LIDO!                                                                                            |\n");
+					printf("| EMAIL INV√ÅLIDO!                                                                                            |\n");
 					printf("| Digite o novo E-mail:                                                                                      |\n");
 					printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 					gets(novodado);
@@ -1013,10 +1013,10 @@ void ClientesAlteracao(){
 		}
 		
 		printf("--------------------------------------------------------------------------------------------------------------\n");
-		printf("| Deseja efetuar uma nova alteraÁ„o?                                                                         |\n");
+		printf("| Deseja efetuar uma nova altera√ß√£o?                                                                         |\n");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		printf("| 1 - Sim                                                                                                    |\n");
-		printf("| 2 - N„o                                                                                                    |\n");
+		printf("| 2 - N√£o                                                                                                    |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n  ");
 		scanf("%d", &continua);
 		continua--;
@@ -1037,9 +1037,9 @@ void ClientesLista(){
 	
 	struct Cliente ClienteVar;
 	if(NumeroLinhas("Clientes.txt") == 0){
-		printf("N„o h· Clientes registrados.");
+		printf("N√£o h√° Clientes registrados.\n");
 	}else{
-		printf("| %6s     %-40s   %-12s   %-37s |\n", "C”DIGO", "NOME", "RG", "CPF");
+		printf("| %6s     %-40s   %-12s   %-37s |\n", "C√ìDIGO", "NOME", "RG", "CPF");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		FILE *f = fopen("Clientes.txt", "r");
 		char line[100];
@@ -1084,9 +1084,9 @@ void ClientesRelatorio(){
 	fprintf(rel, "|======================================================================================|\n");
 	struct Cliente ClienteVar;
 	if(NumeroLinhas("Clientes.txt") == 0){
-		printf("N„o h· Clientes registrados.");
+		printf("N√£o h√° Clientes registrados.\n");
 	}else{
-		fprintf(rel, "| %6s     %-40s   %-12s   %-14s  |\n", "C”DIGO", "NOME", "RG", "CPF");
+		fprintf(rel, "| %6s     %-40s   %-12s   %-14s  |\n", "C√ìDIGO", "NOME", "RG", "CPF");
 		fprintf(rel, "|--------------------------------------------------------------------------------------|\n");
 		FILE *f = fopen("Clientes.txt", "r");
 		char line[100];
@@ -1117,7 +1117,7 @@ void ClientesRelatorio(){
 		fclose(rel);
 		
 		printf("==============================================================================================================\n");
-		printf("| RelatÛrio gerado com sucesso. Digite qualquer tecla para continuar                                         |\n");
+		printf("| Relat√≥rio gerado com sucesso. Digite qualquer tecla para continuar                                         |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n");
 		getch();
 	}
@@ -1132,7 +1132,7 @@ void Editoras(){
 		printf("==============================================================================================================\n");
 		printf("| Editoras                                                                                                   |\n");
 		printf("|============================================================================================================|\n");
-		printf("| Escolha uma opÁ„o:                                                                                         |\n");
+		printf("| Escolha uma op√ß√£o:                                                                                         |\n");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		printf("| 1 - Nossas Editoras                                                                                        |\n");
 		printf("| 2 - Pedidos ***                                                                                            |\n");
@@ -1140,7 +1140,7 @@ void Editoras(){
 		printf("--------------------------------------------------------------------------------------------------------------\n  ");
 		scanf("%d", &opcaoEditora);
 		while(opcaoEditora < 1 || opcaoEditora > 3){
-			printf("\nDigite uma opÁ„o v·lida. (Valores de 1 a 4)\n");
+			printf("\nDigite uma op√ß√£o v√°lida. (Valores de 1 a 4)\n");
 			scanf("%d", &opcaoEditora);
 		}
 		switch(opcaoEditora){
@@ -1170,18 +1170,18 @@ void NossasEditoras(){
 		printf("| Nossas Editoras                                                                                            |\n");
 		printf("|============================================================================================================|\n");
 		EditorasLista();
-		printf("| Escolha uma opÁ„o:                                                                                         |\n");
+		printf("| Escolha uma op√ß√£o:                                                                                         |\n");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		printf("| 1 - Cadastrar                                                                                              |\n");
 		printf("| 2 - Consultar                                                                                              |\n");
 		printf("| 3 - Alterar                                                                                                |\n");
-		printf("| 4 - Gerar RelatÛrio                                                                                        |\n");
+		printf("| 4 - Gerar Relat√≥rio                                                                                        |\n");
 		printf("| 5 - Voltar                                                                                                 |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n  ");
 		
 		scanf("%d", &opcaoEditora);
 		while(opcaoEditora < 1 || opcaoEditora > 5){
-			printf("\nDigite uma opÁ„o v·lida. (Valores de 1 a 5)\n");
+			printf("\nDigite uma op√ß√£o v√°lida. (Valores de 1 a 5)\n");
 			scanf("%d", &opcaoEditora);
 		}
 		switch(opcaoEditora){
@@ -1232,7 +1232,7 @@ void EditorasCadastro(){
 	fflush(stdin);
 	gets(EditoraVar.nomefantasia);
 	printf("|------------------------------------------------------------------------------------------------------------|\n");
-	printf("| Digite a Raz„o Social da Editora:                                                                          |\n");
+	printf("| Digite a Raz√£o Social da Editora:                                                                          |\n");
 	printf("|------------------------------------------------------------------------------------------------------------|\n  ");	
 	gets(EditoraVar.razaosocial);
 	printf("|------------------------------------------------------------------------------------------------------------|\n");
@@ -1240,7 +1240,7 @@ void EditorasCadastro(){
 	printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 	gets(EditoraVar.cnpj);
 	/*while(!ValidarCNPJ(cpf)){
-		printf("\nCNPJ INV¡LIDO!\n");
+		printf("\nCNPJ INV√ÅLIDO!\n");
 		printf("Digite o CNPJ da Editora:\n");
 		gets(EditoraVar.cnpj);
 	}*/
@@ -1255,7 +1255,7 @@ void EditorasCadastro(){
 	gets(EditoraVar.email);
 
 	while(!ValidarEmail(EditoraVar.email)){
-		printf("| EMAIL INV¡LIDO!                                                                                            |\n");
+		printf("| EMAIL INV√ÅLIDO!                                                                                            |\n");
 		printf("| Digite o email da Editora:                                                                                 |\n");
 		printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 		gets(EditoraVar.email);
@@ -1283,7 +1283,7 @@ void EditorasConsulta(){
 		printf("==============================================================================================================\n");
 		printf("| Consulta de Editoras.                                                                                      |\n");
 		printf("|============================================================================================================|\n");
-		printf("| Digite o cÛdigo da Editora que deseja consultar:                                                           |\n");
+		printf("| Digite o c√≥digo da Editora que deseja consultar:                                                           |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n  ");
 		
 
@@ -1292,8 +1292,8 @@ void EditorasConsulta(){
 		
 		while(codigo < 1 || codigo > NumeroLinhas("Editoras.txt") / 7){
 			printf("--------------------------------------------------------------------------------------------------------------\n");
-			printf("| N„o existe uma Editora registrado com o cÛdigo %-5d                                                        |\n", codigo);
-			printf("| Digite o cÛdigo da Editora que deseja consultar:                                                           |\n");
+			printf("| N√£o existe uma Editora registrado com o c√≥digo %-5d                                                        |\n", codigo);
+			printf("| Digite o c√≥digo da Editora que deseja consultar:                                                           |\n");
 			printf("--------------------------------------------------------------------------------------------------------------\n  ");
 			scanf("%d", &codigo);
 		}
@@ -1307,14 +1307,14 @@ void EditorasConsulta(){
 		printf("|============================================================================================================|\n");
 		while(fgets(line, sizeof(line), f)){
 			if(i == (7*(codigo-1))){
-				printf("| CÛdigo:         %-40s                                                   |\n", strtok(line,"\n"));
+				printf("| C√≥digo:         %-40s                                                   |\n", strtok(line,"\n"));
 			}
 			if(i == (7*(codigo-1))+1){
 				printf("| Nome Fantasia:  %-40s                                                   |\n", strtok(line,"\n"));
 			}
 			
 			if(i == (7*(codigo-1))+2){
-				printf("| Raz„o Social:   %-40s                                                   |\n", strtok(line,"\n"));
+				printf("| Raz√£o Social:   %-40s                                                   |\n", strtok(line,"\n"));
 			}
 			
 			if(i == (7*(codigo-1))+3){
@@ -1334,7 +1334,7 @@ void EditorasConsulta(){
 		fclose(f);
 		printf("| Deseja efetuar uma nova consulta?                                                                          |\n");
 		printf("| 1 - Sim                                                                                                    |\n");
-		printf("| 2 - N„o                                                                                                    |\n");
+		printf("| 2 - N√£o                                                                                                    |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n  ");
 		scanf("%d", &continua);
 		continua--;
@@ -1346,17 +1346,17 @@ void EditorasAlteracao(){
 	int continua = 0;
 	while(continua == 0){
 		printf("==============================================================================================================\n");
-		printf("| AlteraÁ„o de Editoras.                                                                                     |\n");
+		printf("| Altera√ß√£o de Editoras.                                                                                     |\n");
 		printf("|============================================================================================================|\n");
-		printf("| Digite o cÛdigo da Editora que deseja alterar:                                                             |\n");
+		printf("| Digite o c√≥digo da Editora que deseja alterar:                                                             |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n  ");
 		int codigo = 0;
 		scanf("%d", &codigo);
 		
 		while(codigo < 1 || codigo > NumeroLinhas("Editoras.txt") / 7){
 			printf("--------------------------------------------------------------------------------------------------------------\n");
-			printf("| N„o existe uma Editora registrado com o cÛdigo %-5d                                                        |\n", codigo);
-			printf("| Digite o cÛdigo da Editora que deseja alterar:                                                             |\n");
+			printf("| N√£o existe uma Editora registrado com o c√≥digo %-5d                                                        |\n", codigo);
+			printf("| Digite o c√≥digo da Editora que deseja alterar:                                                             |\n");
 			printf("--------------------------------------------------------------------------------------------------------------\n  ");
 			scanf("%d", &codigo);
 		}
@@ -1370,14 +1370,14 @@ void EditorasAlteracao(){
 		printf("|============================================================================================================|\n");
 		while(fgets(line, sizeof(line), f)){
 			if(i == (7*(codigo-1))){
-				printf("| CÛdigo:         %-40s                                                   |\n", strtok(line,"\n"));
+				printf("| C√≥digo:         %-40s                                                   |\n", strtok(line,"\n"));
 			}
 			if(i == (7*(codigo-1))+1){
 				printf("| Nome Fantasia:  %-40s                                                   |\n", strtok(line,"\n"));
 			}
 			
 			if(i == (7*(codigo-1))+2){
-				printf("| Raz„o Social:   %-40s                                                   |\n", strtok(line,"\n"));
+				printf("| Raz√£o Social:   %-40s                                                   |\n", strtok(line,"\n"));
 			}
 			
 			if(i == (7*(codigo-1))+3){
@@ -1399,7 +1399,7 @@ void EditorasAlteracao(){
 		printf("|  Digite o dado que deseja alterar                                                                          |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n");
 		printf("| 1 - Nome Fantasia                                                                                          |\n");
-		printf("| 2 - Raz„o Social                                                                                           |\n");
+		printf("| 2 - Raz√£o Social                                                                                           |\n");
 		printf("| 3 - CNPJ                                                                                                   |\n");
 		printf("| 4 - Telefone                                                                                               |\n");
 		printf("| 5 - Email                                                                                                  |\n");
@@ -1438,7 +1438,7 @@ void EditorasAlteracao(){
 				break;			
 			case 2:
 				printf("==============================================================================================================\n");
-				printf("| Digite a nova Raz„o Social:                                                                                |\n");
+				printf("| Digite a nova Raz√£o Social:                                                                                |\n");
 				printf("--------------------------------------------------------------------------------------------------------------\n  ");
 				fgets(novonome,41,stdin);
 				
@@ -1503,7 +1503,7 @@ void EditorasAlteracao(){
 				printf("---------------------------------------------------------------------------------------------------------------\n  ");
 				gets(novodado);
 				while(!ValidarEmail(novodado)){
-					printf("| EMAIL INV¡LIDO!                                                                                             |\n");
+					printf("| EMAIL INV√ÅLIDO!                                                                                             |\n");
 					printf("| Digite o novo E-mail:                                                                                       |\n");
 					printf("|-------------------------------------------------------------------------------------------------------------|\n  ");
 					gets(novodado);
@@ -1524,10 +1524,10 @@ void EditorasAlteracao(){
 				break;
 		}
 		printf("---------------------------------------------------------------------------------------------------------------\n");
-		printf("| Deseja efetuar uma nova alteraÁ„o?                                                                          |\n");
+		printf("| Deseja efetuar uma nova altera√ß√£o?                                                                          |\n");
 		printf("|-------------------------------------------------------------------------------------------------------------|\n");
 		printf("| 1 - Sim                                                                                                     |\n");
-		printf("| 2 - N„o                                                                                                     |\n");
+		printf("| 2 - N√£o                                                                                                     |\n");
 		printf("---------------------------------------------------------------------------------------------------------------\n  ");
 		scanf("%d", &continua);
 		continua--;
@@ -1547,10 +1547,10 @@ void EditorasLista(){
 
 	struct Editora EditoraVar;
 	if(NumeroLinhas("Editoras.txt") == 0){
-		printf("N„o h· Editoras registrados.");
+		printf("N√£o h√° Editoras registrados.\n");
 	}else{
 		
-		printf("| %6s     %-40s   %-40s             |\n", "C”DIGO", "NOME", "CNPJ");
+		printf("| %6s     %-40s   %-40s             |\n", "C√ìDIGO", "NOME", "CNPJ");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		FILE *f = fopen("Editoras.txt", "r");
 		char line[100];
@@ -1591,9 +1591,9 @@ void EditorasRelatorio(){
 	fprintf(rel, "|======================================================================================|\n");
 	struct Editora EditoraVar;
 	if(NumeroLinhas("Editoras.txt") == 0){
-		printf("N„o h· Editoras registrados.");
+		printf("N√£o h√° Editoras registrados.\n");
 	}else{
-		fprintf(rel, "| %6s     %-40s   %-30s |\n", "C”DIGO", "NOME", "CNPJ");
+		fprintf(rel, "| %6s     %-40s   %-30s |\n", "C√ìDIGO", "NOME", "CNPJ");
 		fprintf(rel, "|--------------------------------------------------------------------------------------|\n");
 		FILE *f = fopen("Editoras.txt", "r");
 		char line[100];
@@ -1621,7 +1621,7 @@ void EditorasRelatorio(){
 		fclose(rel);
 		
 		printf("==============================================================================================================\n");
-		printf("| RelatÛrio gerado com sucesso. Digite qualquer tecla para continuar                                         |\n");
+		printf("| Relat√≥rio gerado com sucesso. Digite qualquer tecla para continuar                                         |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n");
 		getch();
 	}
@@ -1637,18 +1637,18 @@ void Pedidos(){
 		printf("| Pedidos                                                                                                    |\n");
 		printf("|============================================================================================================|\n");
 		EditorasLista();
-		printf("| Escolha uma opÁ„o:                                                                                         |\n");
+		printf("| Escolha uma op√ß√£o:                                                                                         |\n");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		printf("| 1 - Novo Pedido                                                                                            |\n");
 		printf("| 2 - Consultar                                                                                              |\n");
 		printf("| 3 - Registrar Chegada                                                                                      |\n");
-		printf("| 4 - Gerar RelatÛrio                                                                                        |\n");
+		printf("| 4 - Gerar Relat√≥rio                                                                                        |\n");
 		printf("| 5 - Voltar                                                                                                 |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n  ");
 
 		scanf("%d", &opcaoPedido);
 		while(opcaoPedido < 1 || opcaoPedido > 5){
-			printf("\nDigite uma opÁ„o v·lida. (Valores de 1 a 5)\n");
+			printf("\nDigite uma op√ß√£o v√°lida. (Valores de 1 a 5)\n");
 			scanf("%d", &opcaoPedido);
 		}
 		switch(opcaoPedido){
@@ -1691,20 +1691,20 @@ void PedidosCadastro(){
 	printf("================================================================================================================================================\n");
 	printf("| Cadastro de Pedidos.                                                                                                                         |\n");
 	printf("|==============================================================================================================================================|\n");
-	printf("| Editoras disponÌveis:                                                                                                                        |\n");
+	printf("| Editoras dispon√≠veis:                                                                                                                        |\n");
 	EditoraListaNome();
-	printf("| Digite o cÛdigo da editora do Pedido:                                                                                                        |\n");
+	printf("| Digite o c√≥digo da editora do Pedido:                                                                                                        |\n");
 	printf("------------------------------------------------------------------------------------------------------------------------------------------------\n  ");
 	scanf("%d", &codigoEditora);
 	while(codigoEditora > NumeroLinhas("Editoras.txt") / 7 || codigoEditora < 1){
 		printf("------------------------------------------------------------------------------------------------------------------------------------------------\n");
-		printf("| N„o existe uma Editora registrado com o cÛdigo %-5d                                                                                         |\n", codigoEditora);
-		printf("| Digite o cÛdigo da Editora que deseja consultar:                                                                                             |\n");
+		printf("| N√£o existe uma Editora registrado com o c√≥digo %-5d                                                                                         |\n", codigoEditora);
+		printf("| Digite o c√≥digo da Editora que deseja consultar:                                                                                             |\n");
 		printf("------------------------------------------------------------------------------------------------------------------------------------------------\n  ");
 		scanf("%d", &codigoEditora);
 	}
 	printf("================================================================================================================================================\n");
-	printf("| Livros disponÌveis:                                                                                                                          |\n");
+	printf("| Livros dispon√≠veis:                                                                                                                          |\n");
 	int codigos[NumeroLinhas("Livros.txt") / 7];
 	LivrosListaNome(codigoEditora, codigos);
 
@@ -1712,7 +1712,7 @@ void PedidosCadastro(){
 	int j = 0;
 	int continua = 0;
 	while(continua == 0){
-		printf("| Digite o cÛdigo do livro:                                                                                                                    |\n");
+		printf("| Digite o c√≥digo do livro:                                                                                                                    |\n");
 		printf("|----------------------------------------------------------------------------------------------------------------------------------------------|\n  ");
 		scanf("%d", &ItensVar[i].codigo);
 		int existe = 0;
@@ -1727,8 +1727,8 @@ void PedidosCadastro(){
 			}
 			if(existe == 0){
 				printf("------------------------------------------------------------------------------------------------------------------------------------------------\n");
-				printf("| N„o existe um livro com esse cÛdigo na Editora escolhida.                                                                                    |\n");
-				printf("| Digite o cÛdigo do livro:                                                                                                                    |\n");
+				printf("| N√£o existe um livro com esse c√≥digo na Editora escolhida.                                                                                    |\n");
+				printf("| Digite o c√≥digo do livro:                                                                                                                    |\n");
 				printf("------------------------------------------------------------------------------------------------------------------------------------------------\n");
 				scanf("%d", &ItensVar[i].codigo);
 			}
@@ -1754,7 +1754,7 @@ void PedidosCadastro(){
 		printf("------------------------------------------------------------------------------------------------------------------------------------------------\n  ");
 		printf("| Deseja adicionar mais um livro?                                                                                                              |\n");
 		printf("| 1 - Sim                                                                                                                                      |\n");
-		printf("| 2 - N„o                                                                                                                                      |\n");
+		printf("| 2 - N√£o                                                                                                                                      |\n");
 		printf("------------------------------------------------------------------------------------------------------------------------------------------------\n  ");
 		scanf("%d", &continua);
 		continua--;
@@ -1798,7 +1798,7 @@ void Livros(){
 		printf("==============================================================================================================\n");
 		printf("| Livros                                                                                                     |\n");
 		printf("|============================================================================================================|\n");
-		printf("| Escolha uma opÁ„o:                                                                                         |\n");
+		printf("| Escolha uma op√ß√£o:                                                                                         |\n");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		printf("| 1 - Nossos Livros                                                                                          |\n");
 		printf("| 2 - Estoque                                                                                                |\n");
@@ -1807,7 +1807,7 @@ void Livros(){
 		
 		scanf("%d", &opcaoLivro);
 		while(opcaoLivro < 1 || opcaoLivro > 3){
-			printf("\nDigite uma opÁ„o v·lida. (Valores de 1 a 3)\n");
+			printf("\nDigite uma op√ß√£o v√°lida. (Valores de 1 a 3)\n");
 			scanf("%d", &opcaoLivro);
 		}
 		switch(opcaoLivro){
@@ -1839,12 +1839,12 @@ void NossosLivros(){
 		printf("| Nossos Livros                                                                                              |\n");
 		printf("|============================================================================================================|\n");
 		LivrosLista();
-		printf("| Escolha uma opÁ„o:                                                                                         |\n");
+		printf("| Escolha uma op√ß√£o:                                                                                         |\n");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		printf("| 1 - Cadastrar                                                                                              |\n");
 		printf("| 2 - Consultar                                                                                              |\n");
 		printf("| 3 - Alterar                                                                                                |\n");
-		printf("| 4 - Gerar RelatÛrio                                                                                        |\n");
+		printf("| 4 - Gerar Relat√≥rio                                                                                        |\n");
 		printf("| 5 - Voltar                                                                                                 |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n  ");
 		
@@ -1852,7 +1852,7 @@ void NossosLivros(){
 		
 		scanf("%d", &opcaoLivro);
 		while(opcaoLivro < 1 || opcaoLivro > 5){
-			printf("\nDigite uma opÁ„o v·lida. (Valores de 1 a 5)\n");
+			printf("\nDigite uma op√ß√£o v√°lida. (Valores de 1 a 5)\n");
 			scanf("%d", &opcaoLivro);
 		}
 		switch(opcaoLivro){
@@ -1909,11 +1909,11 @@ void LivrosCadastro(){
 	fflush(stdin);
 	gets(LivroVar.nome);
 	printf("|----------------------------------------------------|\n");
-	printf("| Digite a ediÁ„o do Livro:                          |\n");
+	printf("| Digite a edi√ß√£o do Livro:                          |\n");
 	printf("|----------------------------------------------------|\n  ");
 	scanf("%d", &LivroVar.edicao);
 	printf("|----------------------------------------------------|\n");
-	printf("| Digite a quantidade de p·ginas do Livro:           |\n");
+	printf("| Digite a quantidade de p√°ginas do Livro:           |\n");
 	printf("|----------------------------------------------------|\n  ");
 	scanf("%d", &LivroVar.paginas);
 	printf("|----------------------------------------------------|\n");
@@ -1925,13 +1925,13 @@ void LivrosCadastro(){
 	printf("|----------------------------------------------------|\n  ");
 	scanf("%lf", &LivroVar.venda);
 	printf("|----------------------------------------------------|\n");
-	printf("| Digite o cÛdigo da Editora do Livro:               |\n");
+	printf("| Digite o c√≥digo da Editora do Livro:               |\n");
 	printf("|----------------------------------------------------|\n  ");
 	EditoraListaNome();
 	scanf("%d", &LivroVar.editora);
 	while(LivroVar.editora < 1 || LivroVar.editora > NumeroLinhas("Editoras.txt") / 7){
-		printf("| N„o existe um Editora registrado com o cÛdigo %-4d |\n", LivroVar.editora);
-		printf("| Digite o cÛdigo da Editora do Livro:               |\n");
+		printf("| N√£o existe um Editora registrado com o c√≥digo %-4d |\n", LivroVar.editora);
+		printf("| Digite o c√≥digo da Editora do Livro:               |\n");
 		printf("|----------------------------------------------------|\n  ");
 		EditoraListaNome();
 		scanf("%d", &LivroVar.editora);
@@ -1947,11 +1947,11 @@ void LivrosCadastro(){
 	printf("|----------------------------------------------------|\n  ");
 	gets(LivroVar.genero);      
 	printf("|----------------------------------------------------|\n");
-	printf("| Digite o nome do™ autor™ do Livro:                 |\n");
+	printf("| Digite o nome do¬™ autor¬™ do Livro:                 |\n");
 	printf("|----------------------------------------------------|\n  ");
 	gets(LivroVar.autor);       
 	printf("|----------------------------------------------------|\n");
-	printf("| Digite o ISBN (CÛdigo de Barras) do Livro:         |\n");
+	printf("| Digite o ISBN (C√≥digo de Barras) do Livro:         |\n");
 	printf("|----------------------------------------------------|\n  ");
 	gets(LivroVar.ISBN); 
 	
@@ -1984,7 +1984,7 @@ void LivrosConsulta(){
 		printf("============================================================\n");
 		printf("| Consulta de Livros.                                      |\n");
 		printf("|==========================================================|\n");
-		printf("| Digite o cÛdigo do Livro que deseja consultar:           |\n");
+		printf("| Digite o c√≥digo do Livro que deseja consultar:           |\n");
 		printf("------------------------------------------------------------\n  ");
 		
 		int codigo = 0;
@@ -1992,8 +1992,8 @@ void LivrosConsulta(){
 		
 		while(codigo < 1 || codigo > NumeroLinhas("Livros.txt") / 12){
 			printf("------------------------------------------------------------\n");
-			printf("| N„o existe um Livro registrado com o cÛdigo %-5d         |\n", codigo);
-			printf("| Digite o cÛdigo do Livro que deseja consultar:           |\n");
+			printf("| N√£o existe um Livro registrado com o c√≥digo %-5d         |\n", codigo);
+			printf("| Digite o c√≥digo do Livro que deseja consultar:           |\n");
 			printf("------------------------------------------------------------\n  ");
 			scanf("%d", &codigo);
 		}
@@ -2007,18 +2007,18 @@ void LivrosConsulta(){
 		printf("|===========================================================|\n");
 		while(fgets(line, sizeof(line), f)){
 			if(i == (12*(codigo-1))){
-				printf("| CÛdigo:          %-40s |\n", strtok(line,"\n"));
+				printf("| C√≥digo:          %-40s |\n", strtok(line,"\n"));
 			}
 			if(i == (12*(codigo-1))+1){
 				printf("| Nome:            %-40s |\n", strtok(line,"\n"));
 			}
 			
 			if(i == (12*(codigo-1))+2){
-				printf("| EdiÁ„o:          %-40s |\n", strtok(line,"\n"));
+				printf("| Edi√ß√£o:          %-40s |\n", strtok(line,"\n"));
 			}
 			
 			if(i == (12*(codigo-1))+3){
-				printf("| P·ginas:         %-40s |\n", strtok(line,"\n"));
+				printf("| P√°ginas:         %-40s |\n", strtok(line,"\n"));
 			}
 			
 			if(i == (1123*(codigo-1))+4){
@@ -2038,11 +2038,11 @@ void LivrosConsulta(){
 			}
 						
 			if(i == (12*(codigo-1))+8){
-				printf("| GÍnero:          %-40s |\n", strtok(line,"\n"));
+				printf("| G√™nero:          %-40s |\n", strtok(line,"\n"));
 			}
 						
 			if(i == (12*(codigo-1))+9){
-				printf("| Autor™:          %-40s |\n", strtok(line,"\n"));
+				printf("| Autor¬™:          %-40s |\n", strtok(line,"\n"));
 			}
 						
 			if(i == (12*(codigo-1))+10){
@@ -2056,7 +2056,7 @@ void LivrosConsulta(){
 		fclose(f);
 		printf("| Deseja efetuar uma nova consulta?                         |\n");
 		printf("| 1 - Sim                                                   |\n");
-		printf("| 2 - N„o                                                   |\n");
+		printf("| 2 - N√£o                                                   |\n");
 		printf("-------------------------------------------------------------\n  ");
 		
 		
@@ -2070,9 +2070,9 @@ void LivrosAlteracao(){
 	int continua = 0;
 	while(continua == 0){
 		printf("============================================================\n");
-		printf("| AlteraÁ„o de Livros.                                     |\n");
+		printf("| Altera√ß√£o de Livros.                                     |\n");
 		printf("|==========================================================|\n");
-		printf("| Digite o cÛdigo do Livro que deseja alterar:             |\n");
+		printf("| Digite o c√≥digo do Livro que deseja alterar:             |\n");
 		printf("------------------------------------------------------------\n  ");
 		
 
@@ -2081,8 +2081,8 @@ void LivrosAlteracao(){
 		
 		while(codigo < 1 || codigo > NumeroLinhas("Livros.txt") / 7){
 			printf("------------------------------------------------------------\n");
-			printf("| N„o existe um Livro registrado com o cÛdigo %-5d         |\n", codigo);
-			printf("| Digite o cÛdigo do Livro que deseja alterar:             |\n");
+			printf("| N√£o existe um Livro registrado com o c√≥digo %-5d         |\n", codigo);
+			printf("| Digite o c√≥digo do Livro que deseja alterar:             |\n");
 			printf("------------------------------------------------------------\n  ");
 			
 			scanf("%d", &codigo);
@@ -2097,18 +2097,18 @@ void LivrosAlteracao(){
 		printf("|===========================================================|\n");
 		while(fgets(line, sizeof(line), f)){
 			if(i == (12*(codigo-1))){
-				printf("| CÛdigo:          %-40s |\n", strtok(line,"\n"));
+				printf("| C√≥digo:          %-40s |\n", strtok(line,"\n"));
 			}
 			if(i == (12*(codigo-1))+1){
 				printf("| Nome:            %-40s |\n", strtok(line,"\n"));
 			}
 			
 			if(i == (12*(codigo-1))+2){
-				printf("| EdiÁ„o:          %-40s |\n", strtok(line,"\n"));
+				printf("| Edi√ß√£o:          %-40s |\n", strtok(line,"\n"));
 			}
 			
 			if(i == (12*(codigo-1))+3){
-				printf("| P·ginas:         %-40s |\n", strtok(line,"\n"));
+				printf("| P√°ginas:         %-40s |\n", strtok(line,"\n"));
 			}
 			
 			if(i == (1123*(codigo-1))+4){
@@ -2128,11 +2128,11 @@ void LivrosAlteracao(){
 			}
 						
 			if(i == (12*(codigo-1))+8){
-				printf("| GÍnero:          %-40s |\n", strtok(line,"\n"));
+				printf("| G√™nero:          %-40s |\n", strtok(line,"\n"));
 			}
 						
 			if(i == (12*(codigo-1))+9){
-				printf("| Autor™:          %-40s |\n", strtok(line,"\n"));
+				printf("| Autor¬™:          %-40s |\n", strtok(line,"\n"));
 			}
 						
 			if(i == (12*(codigo-1))+10){
@@ -2146,14 +2146,14 @@ void LivrosAlteracao(){
 		printf("|  Digite o dado que deseja alterar                                                                          |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n");
 		printf("|  1 - Nome                                                                                                  |\n");
-		printf("|  2 - EdiÁ„o                                                                                                |\n");
-		printf("|  3 - P·ginas                                                                                               |\n");
+		printf("|  2 - Edi√ß√£o                                                                                                |\n");
+		printf("|  3 - P√°ginas                                                                                               |\n");
 		printf("|  4 - Valor de compra                                                                                       |\n");
 		printf("|  5 - Valor de venda                                                                                        |\n");
 		printf("|  6 - Editora                                                                                               |\n");
 		printf("|  7 - Idioma                                                                                                |\n");
-		printf("|  8 - GÍnero                                                                                                |\n");
-		printf("|  9 - Autor™                                                                                                |\n");
+		printf("|  8 - G√™nero                                                                                                |\n");
+		printf("|  9 - Autor¬™                                                                                                |\n");
 		printf("| 10 - ISBN                                                                                                  |\n");
 		printf("==============================================================================================================\n  ");
 		
@@ -2187,7 +2187,7 @@ void LivrosAlteracao(){
 				break;			
 			case 2:
 				printf("===============================================================================================================\n");
-				printf("| Digite a novo EdiÁ„o:                                                                                       |\n");
+				printf("| Digite a novo Edi√ß√£o:                                                                                       |\n");
 				printf("---------------------------------------------------------------------------------------------------------------\n  ");
 				gets(novodado);
 				
@@ -2206,7 +2206,7 @@ void LivrosAlteracao(){
 				break;
 			case 3:
 				printf("===============================================================================================================\n");
-				printf("| Digite a nova Quantidade de P·ginas:                                                                        |\n");
+				printf("| Digite a nova Quantidade de P√°ginas:                                                                        |\n");
 				printf("---------------------------------------------------------------------------------------------------------------\n  ");
 				gets(novodado);
 				while(fgets(line, sizeof(line), from)){
@@ -2264,13 +2264,13 @@ void LivrosAlteracao(){
 				break;			
 			case 6:
 				printf("===============================================================================================================\n");
-				printf("| Digite o novo CÛdigo da Editora:                                                                            |\n");
+				printf("| Digite o novo C√≥digo da Editora:                                                                            |\n");
 				printf("---------------------------------------------------------------------------------------------------------------\n  ");
 				
 				gets(novodado);
 				while(atoi(novodado) < 1 || atoi(novodado) > NumeroLinhas("Editoras.txt") / 7){
-					printf("| N„o existe uma Editora registrado com este cÛdigo                                                          |\n");
-					printf("| Digite o novo CÛdigo da Editora:                                                                           |\n");
+					printf("| N√£o existe uma Editora registrado com este c√≥digo                                                          |\n");
+					printf("| Digite o novo C√≥digo da Editora:                                                                           |\n");
 					printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 					gets(novodado);
 				}
@@ -2311,7 +2311,7 @@ void LivrosAlteracao(){
 				break;			
 			case 8:
 				printf("===============================================================================================================\n");
-				printf("| Digite o novo GÍnero:                                                                                       |\n");
+				printf("| Digite o novo G√™nero:                                                                                       |\n");
 				printf("---------------------------------------------------------------------------------------------------------------\n  ");
 				
 				gets(novodado);
@@ -2331,7 +2331,7 @@ void LivrosAlteracao(){
 				break;			
 			case 9:
 				printf("===============================================================================================================\n");
-				printf("| Digite o novo Autor™:                                                                                       |\n");
+				printf("| Digite o novo Autor¬™:                                                                                       |\n");
 				printf("---------------------------------------------------------------------------------------------------------------\n  ");
 				
 				gets(novodado);
@@ -2371,7 +2371,7 @@ void LivrosAlteracao(){
 				break;
 			
 		}
-		printf("Deseja efetuar uma nova alteraÁ„o?\n\n1 - Sim\n2 - N„o\n");
+		printf("Deseja efetuar uma nova altera√ß√£o?\n\n1 - Sim\n2 - N√£o\n");
 		scanf("%d", &continua);
 		continua--;
 		system("cls");
@@ -2391,12 +2391,12 @@ void LivrosLista(){
 	printf("|============================================================================================================|\n");
 	struct Livro LivroVar;
 	if(NumeroLinhas("Livros.txt") == 0){
-		printf("N„o h· Livros registrados.");
+		printf("N√£o h√° Livros registrados.\n");
 	}else{
 		
 		
 		
-		printf("| %6s     %-40s   %-20s   %-10s   %-9s        |\n", "C”DIGO", "NOME", "AUTOR", "VL. COMPRA", "VL. VENDA");
+		printf("| %6s     %-40s   %-20s   %-10s   %-9s        |\n", "C√ìDIGO", "NOME", "AUTOR", "VL. COMPRA", "VL. VENDA");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		FILE *f = fopen("Livros.txt", "r");
 		char line[100];
@@ -2446,12 +2446,12 @@ void LivrosRelatorio(){
 	fprintf(rel, "|============================================================================================================|\n");
 	struct Livro LivroVar;
 	if(NumeroLinhas("Livros.txt") == 0){
-		fprintf(rel, "N„o h· Livros registrados.");
+		fprintf(rel, "N√£o h√° Livros registrados.\n");
 	}else{
 		
 		
 		
-		fprintf(rel, "| %6s     %-40s   %-20s   %-10s   %-9s        |\n", "C”DIGO", "NOME", "AUTOR", "VL. COMPRA", "VL. VENDA");
+		fprintf(rel, "| %6s     %-40s   %-20s   %-10s   %-9s        |\n", "C√ìDIGO", "NOME", "AUTOR", "VL. COMPRA", "VL. VENDA");
 		fprintf(rel, "|------------------------------------------------------------------------------------------------------------|\n");
 		FILE *f = fopen("Livros.txt", "r");
 		char line[100];
@@ -2485,7 +2485,7 @@ void LivrosRelatorio(){
 	fclose(rel);
 		
 		printf("==============================================================================================================\n");
-		printf("| RelatÛrio gerado com sucesso. Digite qualquer tecla para continuar                                         |\n");
+		printf("| Relat√≥rio gerado com sucesso. Digite qualquer tecla para continuar                                         |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n");
 		getch();
 		}
@@ -2502,9 +2502,9 @@ void Estoque(){
 	printf("|==================================================================|\n");
 	struct Estoque EstoqueVar;
 	if(NumeroLinhas("Livros.txt") == 0){
-		printf("N„o h· Livros registrados.");
+		printf("N√£o h√° Livros registrados.\n");
 	}else{
-		printf("| %-6s     %-40s   %-10s |\n", "C”DIGO", "NOME", "QUANTIDADE");
+		printf("| %-6s     %-40s   %-10s |\n", "C√ìDIGO", "NOME", "QUANTIDADE");
 		printf("|------------------------------------------------------------------|\n");
 		FILE *f = fopen("Livros.txt", "r");
 		char line[100];
@@ -2572,9 +2572,9 @@ void Estoque(){
 	  printf("Abaixo de 20                                                   |\n| ");
 	printf("* ");
 	  printf("Acima  de 20                                                   |\n");
-	printf("| Escolha uma opÁ„o:                                               |\n");
+	printf("| Escolha uma op√ß√£o:                                               |\n");
 	printf("|------------------------------------------------------------------|\n");
-	printf("| 1 - Gerar RelatÛrio                                              |\n");
+	printf("| 1 - Gerar Relat√≥rio                                              |\n");
 	printf("| 3 - Voltar                                                       |\n");
 	printf("--------------------------------------------------------------------\n  ");
 
@@ -2602,9 +2602,9 @@ void EstoqueRelatorio(){
 	struct Estoque EstoqueVar;
 
 	if(NumeroLinhas("Livros.txt") == 0){
-		printf("N„o h· Livros registrados.");
+		printf("N√£o h√° Livros registrados.\n");
 	}else{
-		fprintf(rel, "| %-6s     %-40s   %-10s |\n", "C”DIGO", "NOME", "QUANTIDADE");
+		fprintf(rel, "| %-6s     %-40s   %-10s |\n", "C√ìDIGO", "NOME", "QUANTIDADE");
 		fprintf(rel, "|------------------------------------------------------------------|\n");
 		FILE *f = fopen("Livros.txt", "r");
 		char line[100];
@@ -2663,7 +2663,7 @@ void EstoqueRelatorio(){
 	fclose(rel);
 	
 	printf("==============================================================================================================\n");
-	printf("| RelatÛrio gerado com sucesso. Digite qualquer tecla para continuar                                         |\n");
+	printf("| Relat√≥rio gerado com sucesso. Digite qualquer tecla para continuar                                         |\n");
 	printf("--------------------------------------------------------------------------------------------------------------\n");
 	getch();
 }
@@ -2780,20 +2780,20 @@ void Vendas(){
 		printf("| Vendas                                                                                                     |\n");
 		printf("|============================================================================================================|\n");
 		VendasLista();
-		printf("| Escolha uma opÁ„o:                                                                                         |\n");
+		printf("| Escolha uma op√ß√£o:                                                                                         |\n");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		printf("| 1 - Nova Venda                                                                                             |\n");
 		printf("| 2 - Consultar                                                                                              |\n");
-		printf("| 3 - Gerar RelatÛrio                                                                                        |\n");
+		printf("| 3 - Gerar Relat√≥rio                                                                                        |\n");
 		printf("| 4 - Voltar                                                                                                 |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n  ");
 
 		scanf("%d", &opcaoConta);
 		while(opcaoConta < 1 || opcaoConta > 4){
-			printf("\nDigite uma opÁ„o v·lida. (Valores de 1 a 5)\n");
+			printf("\nDigite uma op√ß√£o v√°lida. (Valores de 1 a 5)\n");
 			scanf("%d", &opcaoConta);
 		}
-		//CondiÁ„o para entrar em uma funÁ„o
+		//Condi√ß√£o para entrar em uma fun√ß√£o
 		switch(opcaoConta){
 			case 1:
 				system("cls");
@@ -2874,8 +2874,8 @@ void VendasCadastro(){
 		
  
  		while(LivrosVar[i].codigo < 1){
-			printf("| N„o existe um Livro registrado com o cÛdigo %-4d                                                           |\n", LivrosVar[i].codigo);
-			printf("| Digite o cÛdigo do Livro:                                                                                  |\n");
+			printf("| N√£o existe um Livro registrado com o c√≥digo %-4d                                                           |\n", LivrosVar[i].codigo);
+			printf("| Digite o c√≥digo do Livro:                                                                                  |\n");
 			printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 			LivrosLista();
 			scanf("%d", &LivrosVar[i].codigo);
@@ -2885,7 +2885,7 @@ void VendasCadastro(){
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		printf("| Deseja adicionar mais livros:                                                                              |\n");
 		printf("| 1 - Sim                                                                                                    |\n");
-		printf("| 2 - N„o                                                                                                    |\n");
+		printf("| 2 - N√£o                                                                                                    |\n");
 		printf("|------------------------------------------------------------------------------------------------------------|\n  ");
 		scanf("%d", &continua);
 	
@@ -2940,10 +2940,10 @@ void VendasLista(){
 	struct Venda VendaVar;
 	
 	if(NumeroLinhas("Vendas.txt") == 0){
-	printf("| N„o h· vendas registradas.                                                                                 |\n");
+	printf("| N√£o h√° vendas registradas.                                                                                 |\n");
 	printf("|------------------------------------------------------------------------------------------------------------|\n");
 	}else{
-		printf("| %6s    %-40s   %-40s   %-10s |\n", "C”DIGO", "FUNCIONARIO", "CLIENTE", "EMISS√O");
+		printf("| %6s    %-40s   %-40s   %-10s |\n", "C√ìDIGO", "FUNCIONARIO", "CLIENTE", "EMISS√ÉO");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		FILE *f = fopen("Vendas.txt", "r");
 		char line[100];
@@ -2995,9 +2995,9 @@ void VendasRelatorio(){
 	struct Venda VendaVar;
 	
 	if(NumeroLinhas("Vendas.txt") == 0){
-	printf("N„o h· vendas registradas.                                                                                 |\n");
+	printf("N√£o h√° vendas registradas.                                                                                 |\n");
 	}else{
-		fprintf(rel, "| %6s    %-40s   %-40s   %-10s |\n", "C”DIGO", "FUNCIONARIO", "CLIENTE", "EMISS√O");
+		fprintf(rel, "| %6s    %-40s   %-40s   %-10s |\n", "C√ìDIGO", "FUNCIONARIO", "CLIENTE", "EMISS√ÉO");
 		fprintf(rel, "|------------------------------------------------------------------------------------------------------------|\n");
         FILE *f = fopen("Vendas.txt", "r");
 		char line[100];
@@ -3030,7 +3030,7 @@ void VendasRelatorio(){
 		fclose(rel);
 		
 		printf("==============================================================================================================\n");
-		printf("| RelatÛrio gerado com sucesso. Digite qualquer tecla para continuar                                         |\n");
+		printf("| Relat√≥rio gerado com sucesso. Digite qualquer tecla para continuar                                         |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n");
 		getch();
 	}
@@ -3046,18 +3046,18 @@ void Contas(){
 		printf("| Contas                                                                                                     |\n");
 		printf("|============================================================================================================|\n");
 		ContasLista();
-		printf("| Escolha uma opÁ„o:                                                                                         |\n");
+		printf("| Escolha uma op√ß√£o:                                                                                         |\n");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		printf("| 1 - Nova Conta                                                                                             |\n");
 		printf("| 2 - Consultar                                                                                              |\n");
 		printf("| 3 - Registrar Pagamento                                                                                    |\n");
-		printf("| 4 - Gerar RelatÛrio                                                                                        |\n");
+		printf("| 4 - Gerar Relat√≥rio                                                                                        |\n");
 		printf("| 5 - Voltar                                                                                                 |\n");
 		printf("--------------------------------------------------------------------------------------------------------------\n  ");
 
 		scanf("%d", &opcaoConta);
 		while(opcaoConta < 1 || opcaoConta > 5){
-			printf("\nDigite uma opÁ„o v·lida. (Valores de 1 a 5)\n");
+			printf("\nDigite uma op√ß√£o v√°lida. (Valores de 1 a 5)\n");
 			scanf("%d", &opcaoConta);
 		}
 		switch(opcaoConta){
@@ -3111,7 +3111,7 @@ void ContasCadastro(){
 	fgets(ContaVar.destino,41,stdin);
 	fflush(stdin);
 	printf("|----------------------------------------------------|\n");
-	printf("| Digite o n˙mero do documento da conta:             |\n");
+	printf("| Digite o n√∫mero do documento da conta:             |\n");
 	printf("|----------------------------------------------------|\n  ");
 	gets(ContaVar.numerodocumento);
 	printf("|----------------------------------------------------|\n");
@@ -3125,12 +3125,12 @@ void ContasCadastro(){
 	scanf("%d", &ContaVar.parcelas);
 	fflush(stdin);
 	printf("|----------------------------------------------------|\n");
-	printf("| Digite a data de emiss„o da conta:                 |\n");
+	printf("| Digite a data de emiss√£o da conta:                 |\n");
 	printf("|----------------------------------------------------|\n  ");
 	gets(ContaVar.emissao);
 	printf("|----------------------------------------------------|\n");
 	printf("| Digite a data de pagamento da conta:               |\n");
-	printf("| (Digite 0 caso a conta n„o tenha sido paga)        |\n");
+	printf("| (Digite 0 caso a conta n√£o tenha sido paga)        |\n");
 	printf("|----------------------------------------------------|\n  ");
 	gets(ContaVar.pagamento);
 	
@@ -3148,7 +3148,7 @@ void ContasCadastro(){
 	fprintf(f, "%d\n", ContaVar.parcelas);
 	fprintf(f, "%s\n", ContaVar.emissao);
 	if(strcmp(ContaVar.pagamento, "0") == 0){
-		fprintf(f, "%s\n", "N√O PAGA");      
+		fprintf(f, "%s\n", "N√ÉO PAGA");      
 	}else{	
 		fprintf(f, "%s\n", ContaVar.pagamento);      
 	}
@@ -3167,7 +3167,7 @@ void ContasConsulta(){
 		printf("============================================================\n");
 		printf("| Consulta de Contas.                                      |\n");
 		printf("|==========================================================|\n");
-		printf("| Digite o cÛdigo da Conta que deseja consultar:           |\n");
+		printf("| Digite o c√≥digo da Conta que deseja consultar:           |\n");
 		printf("------------------------------------------------------------\n  ");
 
 		int codigo = 0;
@@ -3175,8 +3175,8 @@ void ContasConsulta(){
 		
 		while(codigo < 1 || codigo > NumeroLinhas("Contas.txt") / 7){
 			printf("------------------------------------------------------------\n");
-			printf("| N„o existe uma Conta registrado com o cÛdigo %-6d |\n", codigo);
-			printf("| Digite o cÛdigo da Conta que deseja consultar:           |\n");
+			printf("| N√£o existe uma Conta registrado com o c√≥digo %-6d |\n", codigo);
+			printf("| Digite o c√≥digo da Conta que deseja consultar:           |\n");
 			printf("------------------------------------------------------------\n  ");
 			scanf("%d", &codigo);
 		}
@@ -3190,7 +3190,7 @@ void ContasConsulta(){
 		printf("|==============================================================|\n");
 		while(fgets(line, sizeof(line), f)){
 			if(i == (7*(codigo-1))){
-				printf("| CÛdigo:             %-40s |\n", strtok(line,"\n"));
+				printf("| C√≥digo:             %-40s |\n", strtok(line,"\n"));
 			}
 			if(i == (7*(codigo-1))+1){
 				printf("| Destino:            %-40s |\n", strtok(line,"\n"));
@@ -3209,7 +3209,7 @@ void ContasConsulta(){
 			}
 			
 			if(i == (7*(codigo-1))+5){
-				printf("| Data de Emiss„o:    %-40s |\n", strtok(line,"\n"));
+				printf("| Data de Emiss√£o:    %-40s |\n", strtok(line,"\n"));
 			}
 			
 			if(i == (7*(codigo-1))+6){
@@ -3221,7 +3221,7 @@ void ContasConsulta(){
 		fclose(f);
 		printf("| Deseja efetuar uma nova consulta?                            |\n");
 		printf("| 1 - Sim                                                      |\n");
-		printf("| 2 - N„o                                                      |\n");          
+		printf("| 2 - N√£o                                                      |\n");          
 		printf("----------------------------------------------------------------\n  ");
 		scanf("%d", &continua);
 		continua--;
@@ -3234,7 +3234,7 @@ void ContasPagamento(){
 		printf("============================================================\n");
 		printf("| Registrar Pagamento.                                     |\n");
 		printf("|==========================================================|\n");
-		printf("| Digite o cÛdigo da Conta que deseja registrar:           |\n");
+		printf("| Digite o c√≥digo da Conta que deseja registrar:           |\n");
 		printf("------------------------------------------------------------\n  ");
 
 		int codigo = 0;
@@ -3242,8 +3242,8 @@ void ContasPagamento(){
 		
 		while(codigo < 1 || codigo > NumeroLinhas("Contas.txt") / 7){
 			printf("------------------------------------------------------------\n");
-			printf("| N„o existe uma Conta registrada com o cÛdigo %-6d |\n", codigo);
-			printf("| Digite o cÛdigo da Conta que deseja registrar:           |\n");
+			printf("| N√£o existe uma Conta registrada com o c√≥digo %-6d |\n", codigo);
+			printf("| Digite o c√≥digo da Conta que deseja registrar:           |\n");
 			printf("------------------------------------------------------------\n  ");
 			scanf("%d", &codigo);
 		}
@@ -3288,9 +3288,9 @@ void ContasLista(){
 		printf("|============================================================================================================|\n");
 	struct Conta ContaVar;
 	if(NumeroLinhas("Contas.txt") == 0){
-		printf("N„o h· Contas registrados.");
+		printf("N√£o h√° Contas registrados.\n");
 	}else{
-		printf("| %6s     %-40s   %-12s   %-14s   %-20s |\n", "C”DIGO", "DESTINO", "VALOR", "EMISS√O", "PAGAMENTO");
+		printf("| %6s     %-40s   %-12s   %-14s   %-20s |\n", "C√ìDIGO", "DESTINO", "VALOR", "EMISS√ÉO", "PAGAMENTO");
 		printf("|------------------------------------------------------------------------------------------------------------|\n");
 		FILE *f = fopen("Contas.txt", "r");
 		char line[100];
@@ -3340,9 +3340,9 @@ void ContasRelatorio(){
 	fprintf(rel, "|=============================================================================================================|\n");
 	struct Conta ContaVar;
 	if(NumeroLinhas("Contas.txt") == 0){
-		printf("N„o h· Contas registrados.");
+		printf("N√£o h√° Contas registrados.\n");
 	}else{
-		fprintf(rel, "| %6s     %-40s   %-12s   %-14s   %-20s  |\n", "C”DIGO", "DESTINO", "VALOR", "EMISS√O", "PAGAMENTO");
+		fprintf(rel, "| %6s     %-40s   %-12s   %-14s   %-20s  |\n", "C√ìDIGO", "DESTINO", "VALOR", "EMISS√ÉO", "PAGAMENTO");
 		fprintf(rel, "|-------------------------------------------------------------------------------------------------------------|\n");
 		FILE *f = fopen("Contas.txt", "r");
 		char line[100];
@@ -3376,14 +3376,14 @@ void ContasRelatorio(){
 		fclose(rel);
 		
 		printf("======================================================================\n");
-		printf("| RelatÛrio gerado com sucesso. Digite qualquer tecla para continuar |\n");
+		printf("| Relat√≥rio gerado com sucesso. Digite qualquer tecla para continuar |\n");
 		printf("----------------------------------------------------------------------\n");
 		getch();
 	}
 }
 
 void RetornarNomeFuncionario(int codFuncionario, char *nomeFuncionario){
-	FILE *f = fopen("Funcion·rios.txt", "r");
+	FILE *f = fopen("Funcion√°rios.txt", "r");
 	char line[100];
 	int i = 0;
 	int achou = 0;
@@ -3432,13 +3432,13 @@ int ValidarEmail(char email[]) {
 		char c = email[i];
 		if(c == '@') {
 			if (arroba)
-				break; // n„o pode ter uma segunda @
+				break; // n√£o pode ter uma segunda @
 				arroba = 1;
 			if (i < 3)
 				break; // se @ vier antes de 3 caracteres, erro
 		}
-		else if (arroba) { // se j· encontrou @
-			if (ponto) { // se j· encontrou . depois de @
+		else if (arroba) { // se j√° encontrou @
+			if (ponto) { // se j√° encontrou . depois de @
 		    	depoisPonto++;
 		  	}
 		  	else if(c == '.') {
